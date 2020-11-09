@@ -1,0 +1,189 @@
+<div class="container">
+  
+  <header class="header">
+    <h1 id="title" class="text-center">NSW National Parks and Wildlife Service Itinerary Survey</h1>
+    <p id="description" class="description text-center">NSW National Parks and Wildlife Service is surveying people who chose an itinerary from our <a href="https://www.nationalparks.nsw.gov.au/" target="blank">website</a>.</p>
+    <p id="description" class="description text-center">We invite you to tell us about your experience of your selected itinerary. Your response will be used to improve our itineraries.    </p>
+  </header>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" 
+         for="name">Name
+      </label>
+      <input 
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+       />
+     </div>
+     <div class="form-group">
+      <label id="email-label" 
+        for="email">Email
+      </label>
+      <input 
+        type="email"
+        name="email"
+        id="email" 
+        class="form-control"
+        placeholder="Enter your email"
+        required
+       />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age 
+            <span class="clue">(optional)                      </span>
+        </label>
+        <input 
+          type="number"
+          name="age"
+          id="number" 
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+         />
+       </div>
+    
+       <div class="form-group">
+         <p>Select the itinerary you used most recently</p>
+         <select id="dropdown" name="itinerary"                    class="form-control" required>
+          <option disabled selected value>Select itinerary</option>
+          <option value="byron">Byron Bay</option>
+          <option value="darling">Darling River Run</option>
+          <option value="light">Light to Light Walk</option>
+          <option value="montague">Montague Island</option>
+          <option value="midnorth">Mount Kaputar to the Warrambungles</option>
+          <option value="murray">Murrary River Fishing</option>    
+          <option value="orange">Orange to Dubbo</option>    
+          <option value="outback">Outback Discovery</option>    
+          <option value="pillaga">Pillaga Forest and Warrumbungles</option>    
+          <option value="saphire">Saphire Coast Fishing</option>    
+          <option value="sydney">Sydney's Cultural Heritage</option>
+          <option value="thecoast">The Coast Track</option>
+          <option value="whale">Whale Watching</option>
+          <option value="world">World Heritage Wild Wonders</option>
+       </select>
+      </div>
+  
+  <div class="form-group">
+      <p>Would you recommend this itinerary to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure
+      </label>
+    </div>
+   
+    <div class="form-group">
+      <p>Select the words that best describe your itinerary experience <span class="clue">(Check all that apply)</span>
+      </p>
+      <label for="nature">
+        <input 
+          name="experience"
+          value="nature"
+          type="checkbox"
+          class="input-checkbox"  
+          > Nature
+      </label>
+      <label for="away">
+        <input 
+          name="experience"
+          value="away"
+          type="checkbox" 
+          class="input-checkbox"    
+          > Away from it all
+       </label>
+       <label for="randr">
+        <input 
+          name="experience"
+          value="randr"
+          type="checkbox"
+          class="input-checkbox"
+          > Restful and relaxing
+       </label>
+       <label for="adventure">
+         <input 
+          name="experience"
+          value="adventure"
+          type="checkbox"      
+          class="input-checkbox"   
+          > Adventure
+        </label>
+        <label for="family">
+          <input 
+           name="experience"     
+           value="family" 
+           type="checkbox" 
+           class="input-checkbox" 
+           > Family time
+         </label>
+         <label for="exercise">
+           <input 
+             name="experience" 
+             value="exercise" 
+             type="checkbox" 
+             class="input-checkbox" 
+             > Exercise and keeping fit
+          </label>
+          <label for="fishing">
+            <input 
+             name="experience"
+             value="fishing"
+             type="checkbox"
+             class="input-checkbox"
+             > Fishing
+          </label>
+          <label for="wet">
+            <input
+              name="experience"
+              value="wet"
+              type="checkbox"
+              class="input-checkbox"
+              > Swimming, diving, water fun
+          </label>
+      </div>
+  
+    
+      <div class="form-group">
+        <p>Anything comments or suggestions you would like to tell us about your itinerary experience?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      
+
+      <div class="form-group"> 
+        <button type="submit" id="submit" class="submit-button">
+        SUBMIT
+        </button>
+      </div>   
+  </form>
+</div>
